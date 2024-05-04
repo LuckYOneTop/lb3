@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+ 
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); 
+    background-image: url("background.jpg");
+    background-size: cover; 
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #009688;
+    margin-right: auto; /* Смещаем лого влево */
+}
+
+.logo span {
+    color: #ffffff;
+    background-color: #009688;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contact-info {
+    float: right;
+    font-size: 18px;
+    color: #555;
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.tour-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-wrapper {
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tour-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.tour-link img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(255, 165, 0, 0.7);
+    color: white;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+    text-align: center;
+}
+
+.overlay:hover {
+    opacity: 1;
+    bottom: 10px;
+}
+
+h3 {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.tour-link::after {
+    content: '→';
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
